@@ -1,0 +1,99 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #292929;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.paint-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: rgb(48, 48, 48);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+canvas {
+  border: 2.5px solid #6e90ff;
+  border-radius: 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #464646;
+  border: 2.5px solid #6e90ff;
+  border-radius: 5px;
+}
+
+button, input[type="color"], input[type="range"] {
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover{
+  background-color: #6e90ff;
+  color: white;
+  transform: scale(1.09);
+}
+
+input:hover:active{
+  background-color: #6e90ff;
+  transform: scale(1.05);
+}
+
+button:hover:active{
+  background-color: #6e90ff;
+  color: white;
+  transform: scale(0.95);
+}
+
+input[type="color"] {
+  appearance: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 25%;
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0 5px;
+}
+
+input[type="range"] {
+  width: 150px;
+  cursor: pointer;
+  appearance: none;
+  background-color: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #6e90ff;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
